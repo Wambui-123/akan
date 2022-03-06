@@ -23,7 +23,7 @@ HTML.CSS,BOOTSTRAP and JAVASCRIPT
 -git push -u origin main.
 
 ## Link to project
-https://wambui-123.github.io/Tech/
+https://wambui-123.github.io/akan/
 
 ## Author
 Contribution made by git username yvonne-1-2-3
