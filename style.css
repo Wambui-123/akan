@@ -31,3 +31,7 @@ h1{
 #details p{
     font-size: 18px;
 }
+#reveal-result{
+    position: relative;
+    top: 100px;
+}
