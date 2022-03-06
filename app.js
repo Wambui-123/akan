@@ -1,6 +1,5 @@
 function onSubmit(e) {
-    e.preventDefault();
-    console.log(e)
+   // e.preventDefault();
     const maleNames = ['Kwasi',' Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
     const femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
     const answer= document.getElementById('dateOfBirth');
@@ -8,16 +7,14 @@ function onSubmit(e) {
     console.log(selectedDate.getFullYear());
     const yy =parseInt(selectedDate.getFullYear().toString().slice(0,1));
     const cc= parseInt(selectedDate.getFullYear().toString().slice(1,2))
-    const mm = parseInt(selectedDate.getMonth());
-    const dd = parseInt(selectedDate.getDate());
+    const mm = parseInt(selectedDate.getMonth().value);
+    const dd = parseInt(selectedDate.getDate().value);
     console.log(yy,cc,mm,dd)
     const male = document.getElementById('male').value;
     const female = document.getElementById('female').value;
     const button = document.getElementById('btn').value;
 
-    const days= (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
-    let day = 0;
-    let dayName;
+    const day= (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
     switch(day) {
         case 0:
             dayName= 'Sunday'
@@ -45,8 +42,6 @@ function onSubmit(e) {
             break;
     }
     console.log(dayName)
-
-
 
     function results() {
         if(day===0 && maleNames[0]) {
@@ -82,16 +77,8 @@ function onSubmit(e) {
     results()
 }
 document.getElementById('btn').addEventListener('click', onSubmit);
-// window.addEventListener("load", function() {
-// const form = document.getElementById('btn');
-// console.log(form)
-//     form.addEventListener('submit', onSubmit);
-// });
-
-
-//switch
-
-//const result = "Your name is "
+let result = document.getElementById("reveal-result").innerHTML = "Your akan name is " + onSubmit() + "!";
+document.getElementById("myForm").reset();
 
 
 
@@ -101,17 +88,9 @@ document.getElementById('btn').addEventListener('click', onSubmit);
 
 
 
-//button.addEventListener('click', function(){
-  //  console.log(this);
-//}.bind(result));
 
 
 
-//myButton.addEventListener('click', function () {
-  //console.log(this); // Expected Value: 'Data'
-//}.bind(someString));
-
-//
 
 
 
