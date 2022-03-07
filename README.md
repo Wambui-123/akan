@@ -4,7 +4,7 @@ by Yvonne Wambui Muthui.
 A simple wesite with HTML and CSS languages.
 
 ## Description
-Simple webpage that helps you know your name based on your gender and date of birth.
+Simple web application that helps you know what your Akan name would be based on your gender and date of birth. Javascript has been used to make it interactive in a form.
 
 ## Languages used
 HTML.CSS,BOOTSTRAP and JAVASCRIPT
@@ -25,8 +25,6 @@ HTML.CSS,BOOTSTRAP and JAVASCRIPT
 ## Link to project
 https://wambui-123.github.io/akan/
 
-## Author
-Contribution made by git username yvonne-1-2-3
 ## License 
 MIT License
 
