@@ -58,47 +58,47 @@ function onSubmit(e) {
 
         if(dayName === "Monday") {
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[1]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${maleNames[1]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[1]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[1]}`;
             }
             
         } else if (dayName === "Tuesday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[2]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${maleNames[2]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[2]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[2]}`;
             }
             
         } else if (dayName === "Wednesday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[3]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${maleNames[3]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[3]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[3]}`;
             }
         } else if (dayName === "Thursday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[4]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${maleNames[4]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[4]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[4]}`;
             }
         } else if (dayName === "Friday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[5]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${maleNames[5]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[5]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[5]}`;
             }
         } else if (dayName === "Saturday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[6]}`;
+                resultsBox.innerText = `You were born on ${dayName} and your name is ${maleNames[6]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[6]}`;
+                resultsBox.innerText = `Your were born on ${dayName} and your name is ${femaleNames[6]}`;
             }
         } else{
             if(gender === "male"){
-                resultsBox.innerText = `Your name is ${maleNames[0]}`;
+                resultsBox.innerText = `You were born on ${dayName} name is ${maleNames[0]}`;
             }else{
-                resultsBox.innerText = `Your name is ${femaleNames[0]}`;
+                resultsBox.innerText = `Your were born on ${dayName} name is ${femaleNames[0]}`;
             }
         } 
     } else{
@@ -115,5 +115,4 @@ function onSubmit(e) {
 // Listening submit event for when the user sumbits
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", onSubmit);
-
 
