@@ -48,7 +48,7 @@ body{
     font-weight: bold;
 }
 html body{
-    background-image: url(/images/culture.webp) ;
+    background-image: url('./images/culture.webp') ;
 }
 .selectbox{
     font-size: 22px;
