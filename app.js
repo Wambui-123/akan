@@ -24,7 +24,6 @@ function onSubmit(e) {
 
     // Making sure user has entered a correct date format
     if (yearOfBirth.length <= 4 && int_mm <= 12 && int_mm > 0 && int_dd >= 0 && int_dd <= 31) {
-
         // Calculating the day of the week
         const dayOfTheWeek = Math.floor(dayofweek(int_dd, int_mm, int_year));;
 
@@ -52,7 +51,6 @@ function onSubmit(e) {
                 dayName= 'Saturday'
                 break;
         }
-
         // Targeting the DOM element to display our reslut
         const resultsBox = document.getElementById("reveal-result");
 
