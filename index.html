@@ -12,13 +12,14 @@
     <div class="container">
       <div id="details">
           <h1 class="heading" style="font-weight: bold;">Akan Calculator</h1>
-          <p>Would you want to know what Akan name you would be given if were born in Ghana? <br>Its simple just fill in the data below and click submit!</p>
+          <p style="font-size: 18px;">Would you want to know what Akan name you would be given if were born in Ghana? <br>Its simple just fill in the data below and click submit!</p>
       </div>
       <form id="myForm" onsubmit="return false" style="height: 250px;">
           <!--date-->
+          <div class="info">Date of birth</div>
           <div class="date-container">
             <div class="date">
-              <label for="date_of_birth">Year of birth: </label>
+              <label for="date_of_birth">Year: </label>
               <input placeholder="YYYY" class="input" type="text" id="yearOfBirth" required>
             </div>
             <div class="date">
@@ -32,14 +33,16 @@
           </div>
           
           <!--gender-->
-          <label for="gender" style="font-size: 20px;">Gender</label>
-          <div class="selectbox">
-            <input type="radio" name="gender-select" id="gender" value="female" required>
-            <label style="padding-right: 80px;">Male</label></option>
-            <input type="radio" name="gender-select" id="gender" value="male" required>
-            <label>Female</label></option>
+          <div class="info">Gender</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
           </div>
-
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+          <!--Button-->
           <div>
             <button type="submit" id="btn">Submit</button> 
           </div>

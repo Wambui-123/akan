@@ -45,6 +45,16 @@ body{
 html body{
     background-image: url(/images/culture.webp) ;
 }
-.selectbox{
+.form-check{
+    font-size: 20px;
+    margin: 0px;
+}
+.info{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+.date{
     font-size: 20px;
 }
