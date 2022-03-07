@@ -56,47 +56,47 @@ function onSubmit(e) {
 
         if(dayName === "Monday") {
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[1]}`;
+                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${maleNames[1]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[1]}`;
+                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${femaleNames[1]}`;
             }
             
         } else if (dayName === "Tuesday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[2]}`;
+                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${maleNames[2]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[2]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[2]}`;
             }
             
         } else if (dayName === "Wednesday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[3]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[3]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[3]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[3]}`;
             }
         } else if (dayName === "Thursday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[4]}`;
+                resultsBox.innerText = `You were born on a ${dayName}. Akan name is ${maleNames[4]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[4]}`;
+                resultsBox.innerText = `You were born on a ${dayName}. Akan name is ${femaleNames[4]}`;
             }
         } else if (dayName === "Friday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[5]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[5]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[5]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[5]}`;
             }
         } else if (dayName === "Saturday"){
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[6]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[6]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[6]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[6]}`;
             }
         } else{
             if(gender === "male"){
-                resultsBox.innerText = `Your Akan name is ${maleNames[0]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[0]}`;
             }else{
-                resultsBox.innerText = `Your Akan name is ${femaleNames[0]}`;
+                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[0]}`;
             }
         } 
     } else{

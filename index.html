@@ -19,31 +19,32 @@
           <div class="date-container">
             <div class="date">
               <label for="date_of_birth">Year of birth: </label>
-              <input placeholder="e.g. 2002" class="input" type="text" id="yearOfBirth" required>
+              <input placeholder="YYYY" class="input" type="text" id="yearOfBirth" required>
             </div>
             <div class="date">
-                <label for="date_of_birth">month: </label>
-                <input placeholder="e.g. 12"  class="input" type="text" id="monthOfBirth" required>
+                <label for="date_of_birth">Month: </label>
+                <input placeholder="MM"  class="input" type="text" id="monthOfBirth" required>
             </div>
             <div class="date">
-              <label for="date_of_birth">date: </label>
-              <input placeholder="e.g. 28"  class="input" type="text" id="dateOfBirth" required>
+              <label for="date_of_birth">Date: </label>
+              <input placeholder="DD"  class="input" type="text" id="dateOfBirth" required>
             </div>
           </div>
           
           <!--gender-->
           <label for="gender">Gender</label>
           <div class="selectbox">
-            <input type="radio" name="gender-select" id="gender" value="female">Female</option>
-            <input type="radio" name="gender-select" id="gender" value="male">Male</option>
+            <input type="radio" name="gender-select" id="gender" value="female" required>
+            <label style="padding-right: 80px;">Male</label></option>
+            <input type="radio" name="gender-select" id="gender" value="male" required>
+            <label>Female</label></option>
           </div>
 
           <div>
             <button type="submit" id="btn">Submit</button> 
           </div>
-
-        <p id="reveal-result"></p>
       </form>
+      <p id="reveal-result"></p>
     </div>
     <script src="./app.js" type="text/javascript"></script>
 </body>
