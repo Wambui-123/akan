@@ -24,6 +24,7 @@ function onSubmit(e) {
 
     // Making sure user has entered a correct date format
     if (yearOfBirth.length <= 4 && int_mm <= 12 && int_mm > 0 && int_dd >= 0 && int_dd <= 31) {
+
         // Calculating the day of the week
         const dayOfTheWeek = Math.floor(dayofweek(int_dd, int_mm, int_year));;
 
@@ -51,52 +52,53 @@ function onSubmit(e) {
                 dayName= 'Saturday'
                 break;
         }
+
         // Targeting the DOM element to display our reslut
         const resultsBox = document.getElementById("reveal-result");
 
         if(dayName === "Monday") {
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${maleNames[1]}`;
+                resultsBox.innerText = `Your name is ${maleNames[1]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${femaleNames[1]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[1]}`;
             }
             
         } else if (dayName === "Tuesday"){
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName} . + Your Akan name is ${maleNames[2]}`;
+                resultsBox.innerText = `Your name is ${maleNames[2]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[2]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[2]}`;
             }
             
         } else if (dayName === "Wednesday"){
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[3]}`;
+                resultsBox.innerText = `Your name is ${maleNames[3]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[3]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[3]}`;
             }
         } else if (dayName === "Thursday"){
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName}. Akan name is ${maleNames[4]}`;
+                resultsBox.innerText = `Your name is ${maleNames[4]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}. Akan name is ${femaleNames[4]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[4]}`;
             }
         } else if (dayName === "Friday"){
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[5]}`;
+                resultsBox.innerText = `Your name is ${maleNames[5]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[5]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[5]}`;
             }
         } else if (dayName === "Saturday"){
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[6]}`;
+                resultsBox.innerText = `Your name is ${maleNames[6]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[6]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[6]}`;
             }
         } else{
             if(gender === "male"){
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${maleNames[0]}`;
+                resultsBox.innerText = `Your name is ${maleNames[0]}`;
             }else{
-                resultsBox.innerText = `You were born on a ${dayName}.Your Akan name is ${femaleNames[0]}`;
+                resultsBox.innerText = `Your name is ${femaleNames[0]}`;
             }
         } 
     } else{
@@ -113,4 +115,5 @@ function onSubmit(e) {
 // Listening submit event for when the user sumbits
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", onSubmit);
+
 

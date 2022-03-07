@@ -34,6 +34,11 @@ body{
     margin: 25px 0;
     font-size: 20px;
     width: 10%;
+    background-color: rgb(235, 99, 20);
+    color: white;
+}
+#btn:hover{
+    color: rgb(0 0 0);
 }
 
 #reveal-result{
@@ -45,15 +50,24 @@ body{
 html body{
     background-image: url(/images/culture.webp) ;
 }
-.form-check{
-    font-size: 20px;
-    margin: 0px;
+.selectbox{
+    font-size: 22px;
+    text-align: center;
+
+}
+.selectbox input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.selectbox label{
+    padding-right: 50px;
+    margin-left: 50px;
 }
 .info{
-    color: white;
+    color: black;
     font-size: 20px;
-    font-weight: 500;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .date{
     font-size: 20px;
