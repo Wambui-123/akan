@@ -115,3 +115,4 @@ function onSubmit(e) {
 // Listening submit event for when the user sumbits
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", onSubmit);
+
